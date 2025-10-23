@@ -1,0 +1,115 @@
+
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adrián Santos</title>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#06b6d4; --muted:#94a3b8; --glass: rgba(255,255,255,0.03);
+      --radius:16px; --maxw:900px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; background:linear-gradient(180deg,var(--bg) 0%, #071024 100%); color:#e6eef6; display:flex; align-items:center; justify-content:center; min-height:100vh; padding:32px}
+    .wrap{width:100%; max-width:var(--maxw);}
+    header{display:flex; gap:20px; align-items:center; background:linear-gradient(180deg,var(--card), rgba(11,18,32,0.95)); padding:22px; border-radius:var(--radius); box-shadow:0 6px 30px rgba(2,6,23,0.6);}
+    .avatar{width:96px; height:96px; border-radius:14px; background:linear-gradient(135deg,var(--accent), #7c3aed); display:flex; align-items:center; justify-content:center; font-weight:700; font-size:28px; color:#052024}
+    .intro{flex:1}
+    h1{margin:0 0 6px 0; font-size:22px}
+    p.lead{margin:0;color:var(--muted)}
+
+    main{margin-top:18px; display:grid; grid-template-columns:1fr 340px; gap:18px}
+    @media (max-width:880px){main{grid-template-columns:1fr} header{flex-direction:row} .avatar{width:80px;height:80px} }
+
+    .card{background:var(--glass); padding:18px; border-radius:14px; backdrop-filter: blur(6px); border:1px solid rgba(255,255,255,0.03)}
+    .section h2{margin:0 0 8px 0; font-size:16px}
+    ul {margin:8px 0 0 18px}
+    .muted{color:var(--muted); font-size:14px}
+
+    .experience li{margin-bottom:8px}
+
+    aside .card{position:sticky; top:24px}
+
+    footer{margin-top:18px; text-align:center; color:var(--muted); font-size:14px}
+
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#7c3aed);color:#052024;font-weight:600;text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">#</i></div>
+      <div class="intro">
+        <h1>Adrián Santos</h1>
+        <p class="lead">Grado Medio como Técnico en Microinformática y Redes</p>
+        <p class="muted">Especialidad en creación de equipos y soporte en remoto</p>
+      </div>
+      <div style="text-align:right">
+        <a class="btn" href="#agradecimiento">"Like"</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="card section">
+        <h2>Sobre mí</h2>
+        <p class="muted">He dedicado mucho tiempo a la informática en general, especializandome en creación y montaje de equipos gaming y sobre todo en las redes para garantizar un trabajo pleno y bien hecho.</p>
+
+        <div style="margin-top:12px">
+          <h3 style="margin:0 0 6px 0">Formación</h3>
+          <p style="margin:0">Titulación Secundaría Obligatoría</p>
+          <p style="margin:0">Grado Medio - Técnico en Microinformática y Redes</p>
+          <p style="margin:0">Curso Python básico</p>
+          <p style="margin:0">Curso HTML básico</p>
+          <p style="margin:0">Curso de Introducción a la Ciberseguridad (CISCO)</p>
+          <p style="margin:0">Curso de Hackeo WIFI</p>
+        </div>
+
+        <div style="margin-top:12px">
+          <h3 style="margin:0 0 6px 0">Experiencia</h3>
+          <ul class="experience">
+            <li>Técnico en C&G ITSolutions</li>
+            <li>Actualmente en prácticas como técnico de soporte remoto (Tier1)</li>
+            <li>Reparaciones de equipos móviles y tabletas Samsung, Asus, Apple</li>
+            <li>Reparaciones de monitores y televisiones LG</li>
+            <li>Montaje y preparación de equipos de sobremesa</li>
+            <li>Instalación de sistemas operativos</li>
+            <li>Preparación de redes domésticas</li>
+          </ul>
+        </div>
+
+        <div style="margin-top:12px">
+          <h3 style="margin:0 0 6px 0">Pasión por la informática</h3>
+          <p>Mi pasión por la informática hace que le dedique horas y ganas para obtener experiencia laboral y conocimientos para poder conseguir un trabajo bien hecho. </p>
+        </div>
+
+        <div style="margin-top:12px">
+          <h3 style="margin:0 0 6px 0">Formación continua</h3>
+          <p>Continúo mi formación con intención de crecer profesionalmente y obtener el mejor resultado posible de mi trabajo.</p>
+        </div>
+
+      </section>
+
+      <aside>
+        <div class="card">
+          <h2>Resumen</h2>
+          <p class="muted">Nombre: <strong>Adrián Santos</strong></p>
+          <p class="muted">Titulación relacionada con la informática: <strong>Grado Medio como Técnico en Microinformática y Redes</strong></p>
+          <p class="muted">Experiencia en marcas: <strong>Samsung, Asus, LG, Apple, LogiTech.</strong></p>
+
+          <hr style="border:none;border-top:1px solid rgba(255,255,255,0.04);margin:12px 0">
+        </div>
+      </aside>
+
+    </main>
+
+    <footer id="agradecimiento" class="card" style="margin-top:18px">
+      <p style="margin:0"><strong>¡Gracias por visitarme!</strong></p>
+      <p class="muted" style="margin:6px 0 0 0">Agradezco el tiempo que has dedicado a conocerme.</p>
+    </footer>
+
+  </div>
+</body>
+</html>
